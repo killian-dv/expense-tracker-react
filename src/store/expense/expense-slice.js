@@ -8,7 +8,7 @@ export const expenseSlice = createSlice({
     reducers: {
         addExpense: (currentSlice, action) => {
             currentSlice.expenseList.push(action.payload);
-            console.log("addExpense()", action);
+            // console.log("addExpense()", action);
         }
     }
 });

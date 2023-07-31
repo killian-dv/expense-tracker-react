@@ -1,7 +1,10 @@
-import { ExpenseInput } from "components/ExpenseInput/ExpenseInput";
+import { ExpenseInput } from "containers/ExpenseInput/ExpenseInput";
+import { List } from "components/List/List";
+import { useSelector } from "react-redux";
 import s from "./style.module.css";
 
 export function App() {
+  const expenseList = useSelector(store => store.EXPENSE.expenseList)
   return (
     <div className={s.main_container}>
       <div className={`row ${s.header}`}>
@@ -17,7 +20,7 @@ export function App() {
           <ExpenseInput />
         </div>
         <div className={`col-11 col-md-6 col-lg-4 ${s.expense_list}`}>
-          Expense History
+          <List items={expenseList} />
           <div className={`col-12 ${s.expense_total}`}>
             ExpenseTotal
           </div>
