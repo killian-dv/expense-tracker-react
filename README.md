@@ -1,8 +1,10 @@
-# expense-tracker
+# Ispent
+![Design preview](./src/assets/images/preview_app.png)
 
-## Getting started 
+Voici mon application de suivi des dépenses en React.
 
-```bash
-npm i
-npm start
-```
+Lien de l'app : [https://ispent-expense-tracker-react.vercel.app/](https://ispent-expense-tracker-react.vercel.app/)
+
+## Installation
+ - Installer les dépendances `npm install`
+ - Lancer l'application `npm start`
