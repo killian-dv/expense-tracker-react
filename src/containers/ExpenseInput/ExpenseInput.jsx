@@ -10,7 +10,7 @@ export function ExpenseInput(props) {
     const formData = new FormData(e.currentTarget);
     const name = formData.get("name");
     const price = formData.get("price");
-    console.log(name, price);
+    // console.log(name, price);
     dispatch(addExpense({ name, price}));
   }
 
